@@ -28,3 +28,7 @@ Fuentes oficiales extraídas de la Biblioteca y Archivo del Congreso Nacional (B
    python3 -m venv venv
    pip install -r requirements.txt
    ```
+
+## Observación
+
+Tómese en cuenta que es necesario establecer la variable de entorno `OPENAI_API_KEY` antes de utilizar el programa de chats `rag.py`.

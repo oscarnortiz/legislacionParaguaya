@@ -1,9 +1,11 @@
 import pandas as pd
 import re
+from sentence_transformers import SentenceTransformer
+import numpy as np
+import os
 
 # Cargamos el archivo
 df = pd.read_csv("data/articulos.csv", encoding="utf-8")
-
 
 # Limpiamos espacios en blanco innecesarios
 df['articulo'] = df['articulo'].astype(str).str.strip()
@@ -31,11 +33,6 @@ clean_path = "data/articulos_limpio.csv"
 df.to_csv(clean_path, index=False)
 
 print(df.head(20))  # Muestra los primeros 20 artículos normalizados
-
-from sentence_transformers import SentenceTransformer
-import pandas as pd
-import numpy as np
-import os
 
 # Cargamos el archivo CSV con los artículos
 csv_path = "data/articulos.csv"

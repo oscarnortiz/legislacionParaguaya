@@ -1,7 +1,29 @@
-# Sistema de Preguntas y Respuestas sobre Legislación Paraguaya 🇵🇾
+# Sistema de Consulta sobre Legislación Paraguaya
 
-Este proyecto tiene como objetivo desarrollar un sistema de preguntas y respuestas (QA) que facilite el acceso comprensible y rápido a las leyes paraguayas mediante el uso de lenguaje natural, empleando tecnologías de inteligencia artificial como BERT, FAISS y Recuperación Aumentada por Generación (RAG).
+Este proyecto permite realizar preguntas en lenguaje natural sobre leyes paraguayas, utilizando técnicas de Recuperación Aumentada por Generación (RAG). Integra extracción de artículos desde la BACN, procesamiento de textos, vectorización y un sistema conversacional con un LLM.
 
+## Estructura del Proyecto
+
+- `extraerArticulos.py`: Extrae artículos de leyes desde el portal de la BACN Paraguay y guarda los datos en `articulos.csv`.
+- `procesar.py`: Limpia y normaliza los artículos extraídos, vinculándolos con su ley y título (`leyes.csv`).
+- `crear_vectorstore.py`: Crea un vectorstore FAISS a partir de los artículos procesados, utilizando embeddings de HuggingFace.
+- `rag.py`: Inicia el sistema de preguntas y respuestas, cargando el vectorstore y respondiendo con base en los artículos legales.
+- `main.py`: Menú interactivo que permite ejecutar cada etapa del flujo de forma ordenada.
+
+## Requisitos
+
+- Python 3.10+
+- Paquetes:
+  - `langchain`
+  - `langchain-openai`
+  - `langchain-community`
+  - `openai`
+  - `faiss-cpu`
+  - `pandas`
+  - `beautifulsoup4`
+  - `requests`
+  - `python-dotenv`
+  
 ## 📚 Corpus legal utilizado
 
 Fuentes oficiales extraídas de la Biblioteca y Archivo del Congreso Nacional (BACN):
@@ -29,6 +51,32 @@ Fuentes oficiales extraídas de la Biblioteca y Archivo del Congreso Nacional (B
    pip install -r requirements.txt
    ```
 
-## Observación
+## Nota
 
-Tómese en cuenta que es necesario establecer la variable de entorno `OPENAI_API_KEY` antes de utilizar el programa de chats `rag.py`.
+Se requiere una clave API de OpenAI. Guardarla en un archivo .env como:
+```bash
+OPENAI_API_KEY=sk-xxxxx
+```
+
+## Uso
+
+Desde terminal, ejecutar:
+```bash
+python main.py
+```
+
+Y elegir entre:
+
+1. Extraer artículos desde la web de BACN
+2. Procesar artículos y generar los CSV
+3. Crear el vectorstore
+4. Iniciar el sistema de preguntas y respuestas
+
+## Ejemplo de Uso
+
+📚 Sistema de Consulta sobre Legislación Paraguaya
+Escribí tu pregunta o 'salir' para terminar.
+➤ Pregunta: ¿Cuáles son los requisitos para adoptar en Paraguay?
+
+📝 Respuesta:
+Para adoptar un menor en Paraguay, se deben cumplir...

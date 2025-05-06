@@ -2,6 +2,8 @@
 
 Este proyecto tiene como objetivo desarrollar un sistema de preguntas y respuestas (QA) que facilite el acceso comprensible y rápido a las leyes paraguayas mediante el uso de lenguaje natural, empleando tecnologías de inteligencia artificial como BERT, FAISS y Recuperación Aumentada por Generación (RAG).
 
+El archivo `test.ipynb` tiene el resultado de la ejecución del sistema que sirve de entrada al proceso de evaluación de rendimiento.
+
 ## 📚 Corpus legal utilizado
 
 Fuentes oficiales extraídas de la Biblioteca y Archivo del Congreso Nacional (BACN):

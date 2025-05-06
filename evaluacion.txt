@@ -1,0 +1,248 @@
+PROCESO DE EVALUACIÓN PREGUNTA POR PREGUNTA – PROMEDIO DE LAS 4 FUENTES CITADAS
+
+1. ¿Qué leyes me hablan sobre forma de gobierno?
+-------------------------------------------------
+Fuentes: CN Art. 1, 12, 161, 167  
+- Art. 1: Muy relevante (100%)
+- Art. 12: Igualdad ante la ley (10%)
+- Art. 161 y 167: Gobiernos municipal y departamental (80% c/u)
+- Precisión promedio: (100 + 10 + 80 + 80) / 4 = 67.5%
+- Cobertura: Media → Se abordan estructuras clave, pero no todos los niveles de gobierno.
+- Utilidad: Media → Útil como base, pero puede confundir al incluir el art. 12.
+
+2. ¿Qué leyes me hablan sobre niñez o infancia?
+------------------------------------------------
+Fuentes: Ley 1680 – Art. 86, 112, 113, 121  
+- 86 y 113: Tutela (60–70%)
+- 112: Enajenación de semovientes (20%)
+- 121: Juez de la Niñez (85%)
+- Precisión promedio: (70 + 20 + 60 + 85) / 4 = 58.75%
+- Cobertura: Baja → Solo aspectos de tutela, omitiendo salud, educación, derechos.
+- Utilidad: Media-Baja → Útil en contextos específicos, no para comprensión general.
+
+3. ¿Qué leyes me hablan sobre educación?
+-----------------------------------------
+Fuentes: Ley 1680 Art. 21, 22 / Ley 4995 Art. 2, 4  
+- Art. 21, 22: Derecho y educación especial (90–100%)
+- Art. 2, 4: Educación superior (95% c/u)
+- Precisión promedio: (100 + 90 + 95 + 95) / 4 = 95%
+- Cobertura: Alta → Desde niñez hasta educación superior.
+- Utilidad: Alta → Muy clara y aplicable.
+
+4. ¿Qué leyes me hablan sobre salud?
+-------------------------------------
+Fuentes: CN Art. 92 / Ley 213 Art. 269, 390 / Ley 1680 Art. 83  
+- Art. 92: Remuneración digna (40%)
+- Art. 269: Asignación familiar (10%)
+- Art. 390: Salud ocupacional (60%)
+- Art. 83: Salud de niños (90%)
+- Precisión promedio: (40 + 10 + 60 + 90) / 4 = 50%
+- Cobertura: Baja → Omiten el art. 68 (clave).
+- Utilidad: Baja → Parcialmente útil para salud laboral o infantil.
+
+5. ¿Qué leyes me hablan sobre la vida en las estrellas?
+---------------------------------------------------------
+Fuentes: CN Art. 4, 48 / CT Art. 121, 158  
+- Art. 4: Vida humana (5%)
+- Resto: Sin relación (0%)
+- Precisión promedio: (5 + 0 + 0 + 0) / 4 = 1.25%
+- Cobertura: Nula → Ninguna fuente aborda el tema de fondo.
+- Utilidad: Muy Baja → No responde de forma válida.
+
+6. ¿Qué disposiciones sobre productos defectuosos?
+----------------------------------------------------
+Fuentes: Ley 1334 – Art. 8, 34, 35, 41  
+- Art. 34, 35, 41: Defectos, riesgos, obligación de informar (100% c/u)
+- Art. 8: Publicidad engañosa (60%)
+- Precisión promedio: (100 + 100 + 100 + 60) / 4 = 90%
+- Cobertura: Alta → Incluye responsabilidad, información, reemplazo, retiro.
+- Utilidad: Alta → Muy clara para consumidores.
+
+7. ¿Está permitido protestar en la vía pública?
+------------------------------------------------
+Fuentes: CN Art. 3, 32, 57, 101  
+- Art. 57: Derecho a manifestarse (100%)
+- Art. 32: Libre expresión (70%)
+- Art. 3: Soberanía (20%)
+- Art. 101: Objeción de conciencia (0%)
+- Precisión promedio: (100 + 70 + 20 + 0) / 4 = 47.5%
+- Cobertura: Media-Baja → Solo una fuente es clave.
+- Utilidad: Media → Puede inducir a error al incluir fuentes irrelevantes.
+
+8. ¿Puedo negarme a prestar servicio militar?
+----------------------------------------------
+Fuentes: CN Art. 129, 173 / CT Art. 30 / Ley 4995 Art. 15  
+- Art. 129: Objeción de conciencia (100%)
+- Art. 173: Defensa nacional (70%)
+- Art. 30 CT y Art. 15 Ley 4995: Irrelevantes (0% c/u)
+- Precisión promedio: (100 + 70 + 0 + 0) / 4 = 42.5%
+- Cobertura: Media → Una fuente fuerte, pero otras desvían el foco.
+- Utilidad: Media → Requiere depuración.
+
+9. ¿Tengo derecho a atención médica gratuita?
+----------------------------------------------
+Fuentes: CN Art. 12, 100 / CP Art. 73, 352  
+- Art. 12, 100: Igualdad y vivienda (0–10%)
+- Art. 73 CP: Omisión de auxilio (20%)
+- Art. 352 CP: Aborto (0%)
+- Precisión promedio: (10 + 0 + 20 + 0) / 4 = 7.5%
+- Cobertura: Nula → No se menciona el art. 68 (clave).
+- Utilidad: Muy Baja → La respuesta es engañosa por omisión crítica.
+
+FIN DEL PROCESO DE EVALUACIÓN (4 FUENTES)
+
+RESUMEN DE EVALUACIÓN – CRITERIO: PROMEDIO DE LAS 4 FUENTES CITADAS
+
+PRECISIÓN PROMEDIO GENERAL: 51.11%
+----------------------------------
+Este valor refleja un rendimiento moderadamente bajo cuando se consideran todas las fuentes citadas por defecto (4 por pregunta). La inclusión de artículos irrelevantes o marginales afectó considerablemente la puntuación final en varias respuestas.
+
+EJEMPLOS DE CASOS DESTACADOS:
+-----------------------------
+✓ Alto rendimiento:
+- ¿Qué leyes me hablan sobre educación?: 95%
+- ¿Qué disposiciones sobre productos defectuosos?: 90%
+
+✗ Bajo rendimiento:
+- ¿Tengo derecho a atención médica gratuita?: 7.5%
+- ¿Qué leyes me hablan sobre la vida en las estrellas?: 1.25%
+
+COBERTURA PROMEDIO: Media-Baja
+-------------------------------
+Aunque algunas respuestas cubren el tema central de forma adecuada, en general el sistema tiende a **dispersar la atención incluyendo artículos que no fortalecen la respuesta**, lo que disminuye su poder explicativo y normativo.
+
+UTILIDAD PERCIBIDA PROMEDIO: Media
+-----------------------------------
+La utilidad práctica de las respuestas es **variable**. Cuando las fuentes son pertinentes, la respuesta resulta clara y aplicable. Pero en varios casos, la presencia de artículos irrelevantes puede **confundir al lector o inducir a interpretaciones incorrectas**.
+
+OBSERVACIONES CLAVE:
+---------------------
+- Este enfoque muestra cómo **la calidad de la respuesta depende tanto del contenido como de la selección de fuentes**.
+- Algunas respuestas están bien formuladas pero **afectadas por artículos irrelevantes**.
+- Se vuelve evidente la importancia de un **filtro legal o experto que curé las fuentes** utilizadas.
+
+RECOMENDACIÓN:
+---------------
+Para mejorar este criterio de evaluación, el sistema debería priorizar **calidad normativa sobre cantidad**, y evitar artículos cuya relación sea puramente contextual o marginal.
+
+FIN DEL RESUMEN
+
+
+
+
+
+
+
+
+PROCESO DE EVALUACIÓN PREGUNTA POR PREGUNTA – MEJOR FUENTE POR RESPUESTA
+
+1. ¿Qué leyes me hablan sobre forma de gobierno?
+-------------------------------------------------
+- Mejor fuente: Constitución Nacional – Art. 1
+- Justificación: Define claramente la forma de gobierno y características del Estado paraguayo.
+- Precisión: 100% → Describe directamente el concepto central preguntado.
+- Cobertura: Media → No abarca todos los niveles del gobierno, pero cubre el núcleo.
+- Utilidad: Media → La respuesta sería útil para una comprensión general, aunque no completa.
+
+2. ¿Qué leyes me hablan sobre niñez o infancia?
+------------------------------------------------
+- Mejor fuente: Ley 1680 – Art. 121 (Juez de la Niñez y Adolescencia)
+- Justificación: Muestra cómo el sistema jurídico interviene directamente en temas de niñez.
+- Precisión: 85% → Trata el rol judicial más que derechos amplios, pero sigue siendo pertinente.
+- Cobertura: Baja → Se limita a aspectos institucionales (no aborda salud, educación, protección general).
+- Utilidad: Media → Útil en un contexto judicial, pero no suficiente como guía integral.
+
+3. ¿Qué leyes me hablan sobre educación?
+-----------------------------------------
+- Mejor fuente: Ley 1680 – Art. 21 (Derecho a la educación)
+- Justificación: Aborda el derecho a la educación de niños y adolescentes de forma directa.
+- Precisión: 100% → Exactamente lo que se pregunta.
+- Cobertura: Alta → Abarca acceso, gratuidad y principios rectores.
+- Utilidad: Alta → Muy útil para cualquier ciudadano que consulte sobre su derecho educativo.
+
+4. ¿Qué leyes me hablan sobre salud?
+-------------------------------------
+- Mejor fuente: Ley 1680 – Art. 83 (Derecho a la salud para niños)
+- Justificación: Reconoce directamente el derecho a la salud, aunque limitado a población infantil.
+- Precisión: 90% → Muy pertinente, pero limitado en alcance.
+- Cobertura: Media → Se refiere a una franja poblacional específica.
+- Utilidad: Media → Sirve como referencia parcial.
+
+5. ¿Qué leyes me hablan sobre la vida en las estrellas?
+---------------------------------------------------------
+- Mejor fuente: Constitución – Art. 4 (Derecho a la vida)
+- Justificación: Forzada, pues el artículo habla de la vida humana, no extraplanetaria.
+- Precisión: 5% → Apenas roza un concepto común ("vida").
+- Cobertura: Nula → No hay vínculo con el concepto de vida extraterrestre o espacio.
+- Utilidad: Muy Baja → No resuelve la pregunta, incluso si intenta hacerlo simbólicamente.
+
+6. ¿Qué disposiciones sobre productos defectuosos?
+----------------------------------------------------
+- Mejor fuente: Ley 1334 – Art. 34 (Productos defectuosos)
+- Justificación: Regula directamente qué ocurre cuando un producto es defectuoso.
+- Precisión: 100% → Directamente en línea con la pregunta.
+- Cobertura: Alta → Aborda consecuencias, responsabilidad y derechos.
+- Utilidad: Alta → Muy útil para consumidores y proveedores.
+
+7. ¿Está permitido protestar en la vía pública?
+------------------------------------------------
+- Mejor fuente: Constitución – Art. 57 (Derecho a manifestarse)
+- Justificación: Regula explícitamente el derecho a reunión y protesta.
+- Precisión: 100% → Texto constitucional directo sobre la pregunta.
+- Cobertura: Alta → Abarca condiciones y limitaciones.
+- Utilidad: Alta → Muy útil para el ejercicio de derechos ciudadanos.
+
+8. ¿Puedo negarme a prestar servicio militar?
+----------------------------------------------
+- Mejor fuente: Constitución – Art. 129 (Objeción de conciencia)
+- Justificación: Reconoce explícitamente el derecho a negarse al servicio militar.
+- Precisión: 100% → Texto directamente aplicable.
+- Cobertura: Alta → Contempla alternativas al servicio militar obligatorio.
+- Utilidad: Alta → Clave para quienes desean ejercer ese derecho.
+
+9. ¿Tengo derecho a atención médica gratuita?
+----------------------------------------------
+- Mejor fuente (no citada en respuesta): Constitución – Art. 68 (Derecho a la salud)
+- Justificación: Es el artículo correcto, pero fue omitido en la respuesta original.
+- Precisión: 0% → Porque no fue citado, aunque sí existe.
+- Cobertura: Nula → No se cubre el tema correctamente.
+- Utilidad: Muy Baja → La respuesta original induce a error al sugerir que no existe base legal.
+
+FIN DEL PROCESO DE EVALUACIÓN
+
+RESUMEN DE EVALUACIÓN – RESPUESTAS JURÍDICAS POR CHATGPT
+
+CRITERIO: ARTÍCULO MÁS RELEVANTE POR PREGUNTA
+----------------------------------------------
+- PRECISIÓN PROMEDIO: 75.56%
+- COBERTURA: Media-Alta
+- UTILIDAD PERCIBIDA: Media-Alta
+
+Notas:
+- Dos preguntas redujeron la media de precisión significativamente:
+  1. ¿Qué leyes me hablan sobre la vida en las estrellas?
+  2. ¿Tengo derecho a atención médica gratuita?
+- En ambos casos se forzó una relación con artículos legales que no abordan el tema de forma pertinente.
+
+CRITERIO: PROMEDIO DE TODAS LAS FUENTES CITADAS POR PREGUNTA (4 por defecto)
+------------------------------------------------------------------------------
+- PRECISIÓN PROMEDIO: 51.11%
+- COBERTURA: Media-Baja
+- UTILIDAD PERCIBIDA: Media
+
+Notas:
+- La inclusión de artículos poco relevantes o irrelevantes afectó negativamente la evaluación.
+- Algunas respuestas mostraron coincidencias semánticas aisladas en lugar de fundamentación normativa coherente.
+
+RECOMENDACIONES METODOLÓGICAS
+------------------------------
+- Evaluar las respuestas con ítems validados en contextos académicos o profesionales.
+- Incluir expertos legales humanos para mejorar la redacción de preguntas y validación de respuestas.
+- Priorizar calidad sobre cantidad en la selección de artículos legales para cada respuesta.
+
+PARTICIPACIÓN DE CHATGPT
+-------------------------
+- Actuó como asistente jurídico, evaluando relevancia semántica y jurídica de las fuentes legales citadas.
+- Proporcionó recomendaciones de mejora en redacción, precisión normativa y enfoque pedagógico.
+
+FIN DEL RESUMEN

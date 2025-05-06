@@ -1,80 +1,69 @@
-import sys
+# -*- coding: utf-8 -*-
+
+import os
+from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.chat_models import ChatOpenAI
-from langchain.prompts import PromptTemplate
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.llms import HuggingFaceHub
+from langchain.schema import Document
+from langchain_core.prompts import PromptTemplate
+from langchain_openai import ChatOpenAI
+from langchain_core.documents import Document
+from langchain.chains import LLMChain
+from langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from dotenv import load_dotenv
+load_dotenv()
 
-# Forzar impresión UTF-8
-sys.stdout.reconfigure(encoding='utf-8')
-
-# Cargar embeddings y vectorstore
-embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-vectorstore = FAISS.load_local("vectorstore_faiss", embedding_model, allow_dangerous_deserialization=True)
+# Cargar vectorstore
+vectorstore = FAISS.load_local("vectorstore_faiss", HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2"), allow_dangerous_deserialization=True)
+retriever = vectorstore.as_retriever()
 
 # LLM
-llm = ChatOpenAI(
-    model="gpt-3.5-turbo",
-    temperature=0,
-    openai_api_key="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"
+llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key=os.getenv("OPENAI_API_KEY"))
+
+# Plantilla de prompt mejorada
+plantilla = """
+Eres un asistente jurídico entrenado en legislación paraguaya. Usá exclusivamente la información de los artículos legales proporcionados para responder.
+
+Pregunta: {question}
+
+Artículos relevantes:
+{context}
+
+Respuesta:
+"""
+
+prompt = PromptTemplate(
+    template=plantilla,
+    input_variables=["question", "context"]
 )
 
-# Prompt
-prompt = PromptTemplate.from_template(
-    "Respondé en español de forma clara y concisa usando solo los documentos proporcionados.\n"
-    "Si no hay información suficiente, respondé: 'No se encontró información relevante en la legislación disponible.'\n\n"
-    "Contexto:\n{context}\n\nPregunta: {question}\nRespuesta:"
-)
+llm_chain = LLMChain(llm=llm, prompt=prompt)
+qa_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name="context")
 
-# Función principal
+# Wrapper RetrievalQA
+retrieval_chain = RetrievalQA(retriever=retriever, combine_documents_chain=qa_chain, return_source_documents=True)
+
 def buscar_y_responder(pregunta):
-    docs_and_scores = vectorstore.similarity_search_with_score(pregunta, k=5)
-    threshold = 0.65
-    docs_filtrados = [doc for doc, score in docs_and_scores if score >= threshold]
-
-    if not docs_filtrados:
-        return {
-            "result": "No se encontró información relevante en la legislación disponible.",
-            "source_documents": []
-        }
-
-    # Combinar texto de contexto
-    contexto = "\n\n".join([doc.page_content for doc in docs_filtrados])
-    prompt_text = prompt.format(context=contexto, question=pregunta)
-
-    # Llamar al modelo
-    respuesta = llm.invoke(prompt_text)
-
-    return {
-        "result": respuesta.content.strip(),
-        "source_documents": docs_filtrados
-    }
-
-# Interfaz
-print("📘 Sistema de Consulta sobre Legislación Paraguaya")
-print("Escribí tu pregunta o 'salir' para terminar.")
-while True:
-    pregunta = input("❓ Pregunta: >? ")
-    if pregunta.lower() == "salir":
-        print("👋 Hasta luego.")
-        break
-
-    if len(pregunta.split()) < 3:
-        print("❌ Por favor, formulá una pregunta más clara.")
-        continue
-
-    resultado = buscar_y_responder(pregunta)
+    resultado = retrieval_chain.invoke({"query": pregunta})
     respuesta = resultado["result"]
     fuentes = resultado.get("source_documents", [])
 
-    print("✅ Respuesta:\n", respuesta)
-    print("🔎 Fuente(s):")
-    if fuentes:
-        for doc in fuentes:
-            meta = doc.metadata
-            ley = meta.get("ley", "¿?")
-            titulo = meta.get("titulo", "¿?")
-            articulo = meta.get("articulo", "¿?")
-            print(f" - Ley {ley} - {titulo} - Artículo {articulo}")
-    else:
-        print(" - No se encontraron fuentes relevantes.")
-    print("—" * 60)
+    if not respuesta.strip():
+        respuesta = "No se encontró información relevante en la legislación disponible."
+
+    print("\n📝 Respuesta:\n", respuesta)
+    print("\n🔎 Fuente(s):")
+    for doc in fuentes:
+        meta = doc.metadata
+        print(f" - Ley {meta.get('nro_ley')} - {meta.get('titulo_ley')} - Artículo {meta.get('nro_articulo')}")
+
+
+print("📚 Sistema de Consulta sobre Legislación Paraguaya")
+print("Escribí tu pregunta o 'salir' para terminar.")
+
+while True:
+    pregunta = input("➤ Pregunta: >? ").strip()
+    if pregunta.lower() in ["salir", "exit"]:
+        break
+    buscar_y_responder(pregunta)
